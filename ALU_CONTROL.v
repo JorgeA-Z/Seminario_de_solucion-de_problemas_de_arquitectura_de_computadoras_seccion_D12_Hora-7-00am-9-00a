@@ -8,7 +8,7 @@ module AluControl(
 always @*
 begin
     
-    if (ALUOp == 3'b000) begin
+    if (ALUOp == 3'b001) begin
 
         case (func)
         

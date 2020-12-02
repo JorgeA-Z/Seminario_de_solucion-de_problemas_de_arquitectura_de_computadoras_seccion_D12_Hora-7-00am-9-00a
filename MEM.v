@@ -1,7 +1,7 @@
 module Mem(
     input enwr,
     input [31:0] dataIn,
-    input [4:0] Dir,
+    input [31:0] Dir,
     output reg [31:0] DataOut
 );
 
@@ -9,6 +9,8 @@ module Mem(
 
 //Reg & Wire
 
+
+//Checar este apartado, no estoy seguro de que tanto debo agrandar los espacios en memoria
 reg [31:0] BReg [0:31];
 // Biendian & little endian (endianess)
 
