@@ -1,0 +1,186 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples/Proyectos/Act09
+vALU
+!s110 1606923139
+!i10b 1
+!s100 `9Ecdj54Dm]UTnDQ;F:m;0
+I]9]8?SNWV[b__21Tk552U2
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS
+w1606922962
+8C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU.v
+FC:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU.v
+L0 1
+Z2 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1606923139.000000
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU.v|
+!s90 -reportprogress|300|-work|The real folk blues|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU.v|
+!s101 -O0
+!i113 1
+Z3 o-work {The real folk blues} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@a@l@u
+vAluControl
+Z4 !s110 1606923140
+!i10b 1
+!s100 2]zQLS8=FY@UNGC@>H<KW3
+IbJYEjaOn_hNWbla<8e7f]2
+R0
+R1
+w1606922973
+8C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU_CONTROL.v
+FC:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU_CONTROL.v
+L0 2
+R2
+r1
+!s85 0
+31
+Z5 !s108 1606923140.000000
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU_CONTROL.v|
+!s90 -reportprogress|300|-work|The real folk blues|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU_CONTROL.v|
+!s101 -O0
+!i113 1
+R3
+n@alu@control
+vBR
+R4
+!i10b 1
+!s100 ]<ebUZfK>PN8agD0`f^_j3
+I9F46C@Fl0]C2db=EKOAJ^3
+R0
+R1
+w1606922995
+8C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/BR.v
+FC:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/BR.v
+L0 1
+R2
+r1
+!s85 0
+31
+R5
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/BR.v|
+!s90 -reportprogress|300|-work|The real folk blues|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/BR.v|
+!s101 -O0
+!i113 1
+R3
+n@b@r
+vMem
+R4
+!i10b 1
+!s100 CITd70Y<D7:JF[gHYBmdg0
+I5akgjI_c?bje:dUK3T0ZT0
+R0
+R1
+w1606923014
+8C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/MEM.v
+FC:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/MEM.v
+L0 1
+R2
+r1
+!s85 0
+31
+R5
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/MEM.v|
+!s90 -reportprogress|300|-work|The real folk blues|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/MEM.v|
+!s101 -O0
+!i113 1
+R3
+n@mem
+vMux2_1_32
+Z6 !s110 1606923141
+!i10b 1
+!s100 BfK:I73T3ogD;PchFTn^`1
+ID8UX>>c_BlL<:WBmI0J4d3
+R0
+R1
+w1606923023
+8C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU_MEM_MUX2_1.v
+FC:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU_MEM_MUX2_1.v
+L0 1
+R2
+r1
+!s85 0
+31
+R5
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU_MEM_MUX2_1.v|
+!s90 -reportprogress|300|-work|The real folk blues|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU_MEM_MUX2_1.v|
+!s101 -O0
+!i113 1
+R3
+n@mux2_1_32
+vNM
+R4
+!i10b 1
+!s100 e05fUAz4nbPHDmF3LDbK@2
+Iez@PSIb0E]BaEbg1GTm4A2
+R0
+R1
+w1606922982
+8C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU-MEM-BR.v
+FC:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU-MEM-BR.v
+L0 1
+R2
+r1
+!s85 0
+31
+R5
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU-MEM-BR.v|
+!s90 -reportprogress|300|-work|The real folk blues|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/ALU-MEM-BR.v|
+!s101 -O0
+!i113 1
+R3
+n@n@m
+vSee_you_space_cowboy
+R4
+!i10b 1
+!s100 YG^L3L_zzjg93C8[NQHbG2
+IoVnzn;[Dk:XehnXkO<6e92
+R0
+R1
+w1606923005
+8C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/DTPR.v
+FC:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/DTPR.v
+L0 1
+R2
+r1
+!s85 0
+31
+R5
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/DTPR.v|
+!s90 -reportprogress|300|-work|The real folk blues|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/DTPR.v|
+!s101 -O0
+!i113 1
+R3
+n@see_you_space_cowboy
+vUD
+R6
+!i10b 1
+!s100 ^N0oDOKF?:m4=k<7RnVJI0
+IiLH8C0Z@>d6@X]?Ul3Tn03
+R0
+R1
+w1606923033
+8C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/UNIDAD_CONTROL.v
+FC:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/UNIDAD_CONTROL.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1606923141.000000
+!s107 C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/UNIDAD_CONTROL.v|
+!s90 -reportprogress|300|-work|The real folk blues|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/Datapath MIPS/UNIDAD_CONTROL.v|
+!s101 -O0
+!i113 1
+R3
+n@u@d
