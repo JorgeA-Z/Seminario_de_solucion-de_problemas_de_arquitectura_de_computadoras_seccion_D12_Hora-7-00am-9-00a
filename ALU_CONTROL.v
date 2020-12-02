@@ -1,10 +1,10 @@
-
 module AluControl(
     input [2:0] ALUOp,
     input [5:0] func,
     output reg [3:0] selec
 );
 
+//Realizar cambios en ALUcontrol
 always @*
 begin
     

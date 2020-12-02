@@ -8,6 +8,7 @@ module BR(
     output reg [31:0] DR2
 
 );
+//Borrar la inicializacion de los datos
 
 //Reg & Wire
 

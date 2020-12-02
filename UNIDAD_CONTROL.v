@@ -5,7 +5,8 @@ module UD(
     output reg RegWrite,
     output reg [2:0]ALUOp
 );
-
+//Se requiere realizar una serie de cambios para un correcto funcionamiento de este modulo
+//Agregar mas Cases para las demas instrucciones
 always @* //Lista de sensibilidad
 begin
     case(Op)

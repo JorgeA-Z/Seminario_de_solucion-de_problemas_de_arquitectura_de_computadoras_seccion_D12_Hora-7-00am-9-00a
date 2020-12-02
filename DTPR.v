@@ -15,6 +15,7 @@ wire [31:0] cable10;
 wire [31:0] cable11;
 wire [4:0] cable12;
 
+//Hacer revision de las coneciones entre cables, especialmente las de direcciones
 
 assign cable9 = cable8;
 

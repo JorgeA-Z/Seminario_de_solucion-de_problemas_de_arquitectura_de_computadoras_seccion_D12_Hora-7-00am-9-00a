@@ -5,6 +5,8 @@ module Mem(
     output reg [31:0] DataOut
 );
 
+//Agregar mas espacios en memoria
+
 //Reg & Wire
 
 reg [31:0] BReg [0:31];
