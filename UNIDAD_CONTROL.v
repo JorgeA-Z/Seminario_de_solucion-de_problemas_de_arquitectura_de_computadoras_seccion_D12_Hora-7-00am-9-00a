@@ -31,6 +31,4 @@ begin
     endcase
 
 end
-//Hola mundo
-assign a + c + d
 endmodule

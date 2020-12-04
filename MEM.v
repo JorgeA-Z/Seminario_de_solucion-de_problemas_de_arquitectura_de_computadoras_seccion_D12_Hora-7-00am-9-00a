@@ -10,8 +10,7 @@ module Mem(
 //Reg & Wire
 
 
-//Checar este apartado, no estoy seguro de que tanto debo agrandar los espacios en memoria
-reg [31:0] BReg [0:31];
+reg [7:0] BReg [0:512];
 // Biendian & little endian (endianess)
 
 
