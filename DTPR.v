@@ -22,4 +22,19 @@ BR_EXTEND_SIGN_Mux2_1 inst07( .a( ), .b( ), .selec( ), .res( ) );
 
 RS_RD_Mux2_1 inst08( .a( ), .b( ), .selec( ), .res( ) );
 
+ADDER1Mux2_1_32 inst09( .a( ), .b( ), .selec( ), .res( ) );
+
+ADDER2Mux2_1_32 inst10( .a( ), .b( ), .selec( ), .res( ) );
+
+adder inst11( .a( ), .b( ), .c( ) );
+
+ADDERALU inst12( .a( ), .b( ), .c( ) );
+
+Shift_left_2ADDER inst13( .a( ), .b( ) );
+
+Shift_left_2A inst14( .a( ), .b( ) );
+
+BRANCH inst15( .a( ), .b( ), .c( ));
+
+SING_EX inst16( .a( ), .b( ) );
 endmodule

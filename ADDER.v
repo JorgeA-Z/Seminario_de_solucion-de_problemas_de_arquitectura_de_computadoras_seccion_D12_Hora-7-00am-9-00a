@@ -1,7 +1,7 @@
 module adder(
-    input [9:0] a,
+    input [31:0] a,
     input [2:0] b,
-    output [9:0] c);
+    output [31:0] c);
 
 
 assign b = 3'b100;
