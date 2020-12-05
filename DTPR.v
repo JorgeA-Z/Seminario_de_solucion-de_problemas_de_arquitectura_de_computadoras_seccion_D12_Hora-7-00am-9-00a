@@ -37,4 +37,8 @@ Shift_left_2A inst14( .a( ), .b( ) );
 BRANCH inst15( .a( ), .b( ), .c( ));
 
 SING_EX inst16( .a( ), .b( ) );
+
+INSTRUC_MEM inst17( .Datain( ), .instruccion( ) );
+
+PC inst18( .a( ), .b( ) );
 endmodule
