@@ -10,13 +10,13 @@ begin
     
     case (selec)
 
-    1'b0:
+    1'b1:
     begin
         res = a;
         
     end
 
-    1'b1:
+    1'b0:
     begin
         res = b;
     end

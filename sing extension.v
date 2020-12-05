@@ -6,14 +6,14 @@ module SING_EX(
 
 always @*
 begin
-    if([15]a == 1'b0) 
+    if(a[15] == 1'b0) 
     begin
-        b = {16'b0000000000000000, [15:0] a}
+        b = {16'b0000000000000000,  a};
     end
 
     else
     begin
-        b = {16'b1111111111111111, [15:0] a} 
+        b = {16'b1111111111111111,  a}; 
     end
 
 end
