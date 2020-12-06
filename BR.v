@@ -16,7 +16,7 @@ reg [31:0] BR [0:31];
 // Biendian & little endian (endianess)
 initial
 begin
-    $readmemh("TestF1_BReg.mem", BR); 
+    $readmemb("TestF1_BReg.mem", BR); 
 end
 always @*
 begin

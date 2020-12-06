@@ -1,15 +1,18 @@
-`timescale 1ns/1ns
-module The_real_folk_blues();
-reg clk = 0;
+`timescale 1ns/1ps
 
-See_you_space_cowboy inst( .clk(clk));
+module The_Real_Fokl_Blues();
 
-always #50 clk = ~clk;
+reg clk1 = 0;
+
+See_you_space_cowboy( .clk_s(clk1));
+
+always #10 clk1 = ~(clk1);
 
 initial
 begin
-    @(posedge clk);
-    #600;
-    $stop;
+	#5000;
+	$stop;
 end
+
+
 endmodule

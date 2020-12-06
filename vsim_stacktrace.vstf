@@ -1,0 +1,114 @@
+# Current time Sun Dec 06 15:36:58 2020
+# ModelSim PE Student Edition Stack Trace
+# Program = vsim
+# Id = "10.4a"
+# Version = "2015.03"
+# Date = "Apr  7 2015"
+# Platform = win32pe
+# Signature = ac8c563de6ee885313f1754f0d1a83f5
+# 0    0x00801859: '<unknown (@0x801859)>'
+# 1    0x1000e054: 'Tcl_ListMathFuncs + 0x444' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 2    0x1000ecba: 'Tcl_EvalEx + 0x7da' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 3    0x1000e500: 'Tcl_EvalEx + 0x20' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 4    0x00f83f74: '<unknown (@0xf83f74)>'
+# 5    0x1005fb86: 'Tcl_NotifyChannel + 0x136' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 6    0x100aab09: 'TclpHasSockets + 0x379' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Sun Dec 06 15:37:05 2020
+# ModelSim PE Student Edition Stack Trace
+# Program = vsim
+# Id = "10.4a"
+# Version = "2015.03"
+# Date = "Apr  7 2015"
+# Platform = win32pe
+# Signature = ac8c563de6ee885313f1754f0d1a83f5
+# 0    0x0080270d: '<unknown (@0x80270d)>'
+# 1    0x008028b7: '<unknown (@0x8028b7)>'
+# 2    0x0050a292: '<unknown (@0x50a292)>'
+# 3    0x007261e3: '<unknown (@0x7261e3)>'
+# 4    0x00726269: '<unknown (@0x726269)>'
+# --> START OF USERCODE
+# 5    0x6f552466: 'exit + 0x11' in 'c:\windows\winsxs\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9619_none_508d9c7abcbd32b6\msvcr90.dll'
+# <-- END OF USERCODE
+# 6    0x00725fb4: '<unknown (@0x725fb4)>'
+# 7    0x0113699d: '<unknown (@0x113699d)>'
+# 8    0x007274ab: '<unknown (@0x7274ab)>'
+# 9    0x0081c9dd: '<unknown (@0x81c9dd)>'
+# 10   0x7730cf26: 'LdrSetDllManifestProber + 0xf6' in 'c:\windows\system32\ntdll.dll'
+# 11   0x77308e8b: 'RtlUnwind + 0x1cb' in 'c:\windows\system32\ntdll.dll'
+# 12   0x773153c6: 'KiUserExceptionDispatcher + 0x26' in 'c:\windows\system32\ntdll.dll'
+# 13   0x1000e054: 'Tcl_ListMathFuncs + 0x444' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 14   0x1000ecba: 'Tcl_EvalEx + 0x7da' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 15   0x1000e500: 'Tcl_EvalEx + 0x20' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 16   0x00f83f74: '<unknown (@0xf83f74)>'
+# 17   0x1005fb86: 'Tcl_NotifyChannel + 0x136' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 18   0x100aab09: 'TclpHasSockets + 0x379' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Sun Dec 06 15:37:05 2020
+# ModelSim PE Student Edition Stack Trace
+# Program = vsim
+# Id = "10.4a"
+# Version = "2015.03"
+# Date = "Apr  7 2015"
+# Platform = win32pe
+# Signature = ac8c563de6ee885313f1754f0d1a83f5
+# 0    0x0080270d: '<unknown (@0x80270d)>'
+# 1    0x008028b7: '<unknown (@0x8028b7)>'
+# 2    0x0050a292: '<unknown (@0x50a292)>'
+# 3    0x007261e3: '<unknown (@0x7261e3)>'
+# 4    0x00726269: '<unknown (@0x726269)>'
+# --> START OF USERCODE
+# 5    0x6f552466: 'exit + 0x11' in 'c:\windows\winsxs\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9619_none_508d9c7abcbd32b6\msvcr90.dll'
+# <-- END OF USERCODE
+# 6    0x00725fb4: '<unknown (@0x725fb4)>'
+# 7    0x0113699d: '<unknown (@0x113699d)>'
+# 8    0x007274ab: '<unknown (@0x7274ab)>'
+# 9    0x0081c9dd: '<unknown (@0x81c9dd)>'
+# 10   0x7730cf26: 'LdrSetDllManifestProber + 0xf6' in 'c:\windows\system32\ntdll.dll'
+# 11   0x77308e8b: 'RtlUnwind + 0x1cb' in 'c:\windows\system32\ntdll.dll'
+# 12   0x773153c6: 'KiUserExceptionDispatcher + 0x26' in 'c:\windows\system32\ntdll.dll'
+# 13   0x1000e054: 'Tcl_ListMathFuncs + 0x444' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 14   0x1000ecba: 'Tcl_EvalEx + 0x7da' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 15   0x1000e500: 'Tcl_EvalEx + 0x20' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 16   0x00f83f74: '<unknown (@0xf83f74)>'
+# 17   0x1005fb86: 'Tcl_NotifyChannel + 0x136' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 18   0x100aab09: 'TclpHasSockets + 0x379' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# End of Stack Trace
+
+
+# Current time Sun Dec 06 15:37:05 2020
+# ModelSim PE Student Edition Stack Trace
+# Program = vsim
+# Id = "10.4a"
+# Version = "2015.03"
+# Date = "Apr  7 2015"
+# Platform = win32pe
+# Signature = ac8c563de6ee885313f1754f0d1a83f5
+# 0    0x0080270d: '<unknown (@0x80270d)>'
+# 1    0x008028b7: '<unknown (@0x8028b7)>'
+# 2    0x0050a292: '<unknown (@0x50a292)>'
+# 3    0x007261e3: '<unknown (@0x7261e3)>'
+# 4    0x00726269: '<unknown (@0x726269)>'
+# --> START OF USERCODE
+# 5    0x6f552466: 'exit + 0x11' in 'c:\windows\winsxs\x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9619_none_508d9c7abcbd32b6\msvcr90.dll'
+# <-- END OF USERCODE
+# 6    0x00725fb4: '<unknown (@0x725fb4)>'
+# 7    0x0113699d: '<unknown (@0x113699d)>'
+# 8    0x007274ab: '<unknown (@0x7274ab)>'
+# 9    0x0081c9dd: '<unknown (@0x81c9dd)>'
+# 10   0x7730cf26: 'LdrSetDllManifestProber + 0xf6' in 'c:\windows\system32\ntdll.dll'
+# 11   0x77308e8b: 'RtlUnwind + 0x1cb' in 'c:\windows\system32\ntdll.dll'
+# 12   0x773153c6: 'KiUserExceptionDispatcher + 0x26' in 'c:\windows\system32\ntdll.dll'
+# 13   0x1000e054: 'Tcl_ListMathFuncs + 0x444' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 14   0x1000ecba: 'Tcl_EvalEx + 0x7da' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 15   0x1000e500: 'Tcl_EvalEx + 0x20' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 16   0x00f83f74: '<unknown (@0xf83f74)>'
+# 17   0x1005fb86: 'Tcl_NotifyChannel + 0x136' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# 18   0x100aab09: 'TclpHasSockets + 0x379' in 'c:\modeltech_pe_edu_10.4a\win32pe_edu\tcl85.dll'
+# End of Stack Trace
+
+
