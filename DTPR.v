@@ -1,9 +1,8 @@
-module See_you_space_cowboy(
-    input [31:0] instruccion);
+module See_you_space_cowboy();
 
 
 //Hacer revision de las coneciones entre cables, especialmente las de direcciones
-
+wire [31:0] instruccion;
 wire [4:0] cable1;
 wire cable2;
 wire [4:0] cable3;
@@ -32,7 +31,7 @@ wire [31:0] cable25;
 wire cable26;
 wire [31:0] cable27;
 wire [31:0] cable28;
-wire [31:0] cable29;
+wire [7:0] cable29;
 wire [7:0] cable30;
 wire [31:0] cable31;
 wire [27:0] cable32;
@@ -84,7 +83,7 @@ BRANCH inst15( .a(cable4), .b(cable13), .c(cable26));
 
 SING_EX inst16( .a(instruccion[15:0]), .b(cable17) );
 
-INSTRUC_MEM inst17( .Datain(cable29), .instruccion(instruccion[31:0]) );
+INSTRUC_MEM inst17( .Datain(cable29), .instruccion(instruccion) );
 
 PC inst18( .a(cable28), .b(cable29) );
 endmodule

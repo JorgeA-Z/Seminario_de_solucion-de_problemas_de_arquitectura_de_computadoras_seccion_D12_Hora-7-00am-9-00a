@@ -16,7 +16,7 @@ reg [31:0] BR [0:31];
 // Biendian & little endian (endianess)
 initial
 begin
-    $readmemh("C:\Modeltech_pe_edu_10.4a\examples\Datapath MIPS\TestF1_BReg.mem", BR); 
+    $readmemh("TestF1_BReg.mem", BR); 
 end
 always @*
 begin

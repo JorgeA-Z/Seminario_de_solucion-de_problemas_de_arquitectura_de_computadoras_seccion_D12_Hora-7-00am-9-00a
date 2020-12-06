@@ -1,13 +1,13 @@
 module INSTRUC_MEM(
-    input [31:0] Datain,
+    input [7:0] Datain,
     output [31:0] instruccion 
 );
 
-reg [7:0] mem [0:512];
+reg [31:0] IN [0:512];
 
 initial
 begin
-   $readmemh("C:\Modeltech_pe_edu_10.4a\examples\Datapath MIPS\TestF1_MemInst.mem", mem); 
+    $readmemh("TestF1_MemInst.mem", IN); 
 end
-assign instruccion = mem[Datain>>2];
+assign instruction = IN[Datain[7:0]];
 endmodule
