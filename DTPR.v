@@ -4,41 +4,87 @@ module See_you_space_cowboy(
 
 //Hacer revision de las coneciones entre cables, especialmente las de direcciones
 
+wire [4:0] cable1;
+wire cable2;
+wire [4:0] cable3;
+wire cable4;
+wire cable5;
+wire cable6;
+wire [2:0] cable7;
+wire cable8;
+wire cable9;
+wire cable10;
+wire cable11;
+wire [2:0] cable12;
+wire cable13;
+wire [31:0] cable14;
+wire [31:0] cable15;
+wire [31:0] cable16;
+wire [31:0] cable17;
+wire [31:0] cable18;
+wire [31:0] cable19;
+wire [31:0] cable20;
+wire [31:0] cable21;
+wire [31:0] cable22;
+wire [31:0] cable23;
+wire [31:0] cable24;
+wire [31:0] cable25;
+wire cable26;
+wire [31:0] cable27;
+wire [31:0] cable28;
+wire [31:0] cable29;
+wire [7:0] cable30;
+wire [31:0] cable31;
+wire [27:0] cable32;
 
+wire [31:0] cable33;
+wire [31:0] cable34;
+wire [31:0] cable35;
 
-ALU ins01( .a( ), .b( ), .s( ), .zf( ), .z( ) );
+wire [31:0] cable36;
+assign cable36 = cable29;
+assign cable34 = cable31;
+assign cable33 = cable32 + cable34;
+assign cable30 = cable29;
+assign cable23 = cable17;
+assign cable20 = cable19;
+assign cable16 = cable15;
 
-BR ins02(  .Din( ),  .RA1( instruccion[25:21] ),  .RA2( instruccion[20:16] ), .WA( instruccion[15:11] ), .RegWrite( ),  .DR1( ),  .DR2( ) );
+assign cable1 = instruccion[20:16];
 
-UD ins03( .Op( instruccion[31:26] ), .MemToReg(  ), .MemToWrite( ), .RegWrite( ), .ALUOp( ) );
+ALU ins01( .a(cable14), .b(cable18), .s(cable12), .zf(cable13), .z(cable19) );
 
-AluControl ins04( .ALUOp( ),  .func( instruccion[5:0] ), .selec( ) );
+BR ins02(  .Din(cable22),  .RA1( instruccion[25:21] ),  .RA2( instruccion[20:16] ), .WA(cable3), .RegWrite(cable10),  .DR1(cable14),  .DR2(cable15) );
 
-Mux2_1_32 ins05( .a( ), .b( ), .selec( ), .res( ) );
+UD ins03( .Op( instruccion[31:26] ), .jump(cable11), .RegDst(cable2), .Branch(cable4), .MemToRead(cable5), .MemToReg(cable6), .ALUOp(cable7), .MemToWrite(cable8), .ALUSrc(cable9), .RegWrite(cable10) );
 
-Mem ins06( .enwr( ), .dataIn( ),  .Dir( ), .DataOut( ) );
+AluControl ins04( .ALUOp(cable7),  .func(instruccion[5:0]), .selec(cable12) );
 
-BR_EXTEND_SIGN_Mux2_1 inst07( .a( ), .b( ), .selec( ), .res( ) );
+Mux2_1_32 ins05( .a(cable21), .b(cable20), .selec(cable6), .res(cable22) );
 
-RS_RD_Mux2_1 inst08( .a( ), .b( ), .selec( ), .res( ) );
+Mem ins06( .enwr(cable8), .MemToRead(cable5), .dataIn(cable16),  .Dir(cable19), .DataOut(cable21) );
 
-ADDER1Mux2_1_32 inst09( .a( ), .b( ), .selec( ), .res( ) );
+BR_EXTEND_SIGN_Mux2_1 inst07( .a(cable15), .b(cable17), .selec(cable9), .res(cable18) );
 
-ADDER2Mux2_1_32 inst10( .a( ), .b( ), .selec( ), .res( ) );
+RS_RD_Mux2_1 inst08( .a(cable1), .b(instruccion[15:11]), .selec(cable2), .res(cable3) );
 
-adder inst11( .a( ), .b( ), .c( ) );
+ADDER1Mux2_1_32 inst09( .a(cable31), .b(cable25), .selec(cable26), .res(cable27) );
 
-ADDERALU inst12( .a( ), .b( ), .c( ) );
+ADDER2Mux2_1_32 inst10( .a(cable33), .b(cable27), .selec(cable11), .res(cable28) );
 
-Shift_left_2ADDER inst13( .a( ), .b( ) );
+adder inst11( .a(cable30), .c(cable31) );
 
-Shift_left_2A inst14( .a( ), .b( ) );
+ADDERALU inst12( .a(cable36), .b(cable24), .c(cable25) );
 
-BRANCH inst15( .a( ), .b( ), .c( ));
+Shift_left_2ADDER inst13( .a(instruccion[25:0]), .b(cable32) );
 
-SING_EX inst16( .a( ), .b( ) );
+Shift_left_2 inst14( .a(cable23), .b(cable24) );
 
-INSTRUC_MEM inst17( .Datain( ), .instruccion( ) );
+BRANCH inst15( .a(cable4), .b(cable13), .c(cable26));
 
-PC inst18( .a( ), .b( ) );
+SING_EX inst16( .a(instruccion[15:0]), .b(cable17) );
+
+INSTRUC_MEM inst17( .Datain(cable29), .instruccion(instruccion[31:0]) );
+
+PC inst18( .a(cable28), .b(cable29) );
 endmodule

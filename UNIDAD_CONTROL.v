@@ -14,19 +14,54 @@ module UD(
 always @* //Lista de sensibilidad
 begin
     case(Op)
+    
+    //tipo R
 
-    6'b000000:
+    6'd000000:
     begin
         RegDst = 1'b1;
         Branch = 1'b0;
         MemToRead = 1'b0;
         MemToReg = 1'b0;
-        ALUOp = 3'b001;
+        ALUOp = 3'b000;
         MemToWrite = 1'b0;
         ALUSrc = 1'b0;
         RegWrite = 1'b1;
         jump = 1'b0;
     end
+    
+    //lw
+    6'd100011:
+    begin
+        
+        RegDst = 1'b0;
+        Branch = 1'b0;
+        MemToRead = 1'b1;
+        MemToReg = 1'b1;
+        ALUOp = 3'b000;
+        MemToWrite = 1'b0;
+        ALUSrc = 1'b1;
+        RegWrite = 1'b1;
+        jump = 1'b0;
+        
+    end
+    //sw
+    6'd101011:
+    begin
+        
+        RegDst = 1'b1;
+        Branch = 1'b1;
+        MemToRead = 1'b0;
+        MemToReg = 1'b0;
+        ALUOp = 3'b000;
+        MemToWrite = 1'b0;
+        ALUSrc = 1'b0;
+        RegWrite = 1'b0;
+        jump = 1'b0;
+        
+    end
+
+
 
     endcase
 

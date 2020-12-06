@@ -1,56 +1,84 @@
 module AluControl(
     input [2:0] ALUOp,
     input [5:0] func,
-    output reg [3:0] selec
+    output reg [2:0] selec
 );
 
 //Realizar cambios en ALUcontrol
 always @*
 begin
     
-    if (ALUOp == 3'b001) begin
-
-        case (func)
+    case (ALUOp) 
         
-        //add
-        6'd32:
+        3'b000:
         begin
 
-            selec = 4'd0;
-            
-        end
+            case (func)
 
-        //sub
-        6'd34:
-        begin
-            
-            selec = 4'd1;
+            //NOP
+            6'd000000:
+            begin
 
-        end
-        
-        //OR
-        6'd37:
-        begin
+                selec = 3'd7;
+                
+            end
 
-            selec = 4'd2;
-            
-        end
-        //AND
-        6'd36:
-        begin
+            //add
+            6'd32:
+            begin
 
-            selec = 4'd3;
+                selec = 3'd0;
+                
+            end
+
+            //sub
+            6'd34:
+            begin
+                
+                selec = 3'd1;
+
+            end
+            
+            //OR
+            6'd37:
+            begin
+
+                selec = 3'd2;
+                
+            end
+            //AND
+            6'd36:
+            begin
+
+                selec = 3'd3;
+                
+            end
+            //slt
+            6'd42:
+            begin
+                
+                selec = 3'd4;
+                
+            end
+            
+            6'd24:
+            begin
+                
+                selec = 3'd5;
+                
+            end
+            
+            6'd26:
+            begin
+                
+                selec = 3'd6;
+                
+            end
+            endcase
             
         end
-        //slt
-        6'd42:
-        begin
-            
-            selec = 4'd4;
-            
-        end
-        endcase
-    end
+    
+    endcase
     
 
 end

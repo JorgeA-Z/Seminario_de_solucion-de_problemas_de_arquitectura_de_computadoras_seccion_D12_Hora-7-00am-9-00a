@@ -1,6 +1,6 @@
 module ALU(
     input [31:0] a, b,
-    input  [3:0] s, //4bit
+    input  [2:0] s, //4bit
     output reg zf,
     output reg [31:0] z
 );
@@ -12,28 +12,28 @@ begin
 
     case (s)
 
-    4'd0:
+    3'd0:
     begin
 
         z = a + b;
 
     end
     
-    4'd1:
+    3'd1:
     begin
 
         z = a - b;
 
     end
     
-    4'd2:
+    3'd2:
     begin
 
         z = a & b;
 
     end
     
-    4'd3:
+    3'd3:
     begin
 
         z = a | b;
@@ -41,7 +41,7 @@ begin
 
     end
     
-    4'd4:
+    3'd4:
     begin
 
         if (a < b) begin
@@ -54,7 +54,29 @@ begin
         end
         
     end
+    
+    3'd5:
+    begin
 
+        z = a * b;
+
+
+    end
+    
+    3'd6:
+    begin
+
+        z = a / b;
+    
+    end
+    
+    3'd7:
+    begin
+
+        z = a << 5'd0;
+    
+    end
+    
     endcase
 
     if (z != 1) begin

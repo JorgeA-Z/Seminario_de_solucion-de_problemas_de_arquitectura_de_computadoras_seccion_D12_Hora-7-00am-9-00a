@@ -1,6 +1,5 @@
 module adder(
-    input [31:0] a,
-    input [2:0] b,
+    input [7:0] a,
     output [31:0] c);
 
 
