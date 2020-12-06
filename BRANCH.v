@@ -1,8 +1,11 @@
 module BRANCH(
     input a,
     input b,
-    output c);
+    output reg c);
 
-assign c = a & b;
+always@*
+begin
+    c = a & b;
+end
 endmodule
 

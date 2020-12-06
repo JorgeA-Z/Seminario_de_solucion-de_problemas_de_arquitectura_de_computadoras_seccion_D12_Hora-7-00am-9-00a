@@ -1,4 +1,5 @@
-module See_you_space_cowboy();
+module See_you_space_cowboy(
+    input clk);
 
 
 //Hacer revision de las coneciones entre cables, especialmente las de direcciones
@@ -31,7 +32,7 @@ wire [31:0] cable25;
 wire cable26;
 wire [31:0] cable27;
 wire [31:0] cable28;
-wire [7:0] cable29;
+wire [31:0] cable29;
 wire [7:0] cable30;
 wire [31:0] cable31;
 wire [27:0] cable32;
@@ -41,6 +42,9 @@ wire [31:0] cable34;
 wire [31:0] cable35;
 
 wire [31:0] cable36;
+wire [7:0] cable37;
+
+assign cable37 = 8'd4;
 assign cable36 = cable29;
 assign cable34 = cable31;
 assign cable33 = cable32 + cable34;
@@ -71,7 +75,7 @@ ADDER1Mux2_1_32 inst09( .a(cable31), .b(cable25), .selec(cable26), .res(cable27)
 
 ADDER2Mux2_1_32 inst10( .a(cable33), .b(cable27), .selec(cable11), .res(cable28) );
 
-adder inst11( .a(cable30), .c(cable31) );
+adder inst11( .a(cable30), .b(cable37), .c(cable31) );
 
 ADDERALU inst12( .a(cable36), .b(cable24), .c(cable25) );
 
@@ -85,5 +89,5 @@ SING_EX inst16( .a(instruccion[15:0]), .b(cable17) );
 
 INSTRUC_MEM inst17( .Datain(cable29), .instruccion(instruccion) );
 
-PC inst18( .a(cable28), .b(cable29) );
+PC inst18( .a(cable28), .clk(clk), .b(cable29) );
 endmodule

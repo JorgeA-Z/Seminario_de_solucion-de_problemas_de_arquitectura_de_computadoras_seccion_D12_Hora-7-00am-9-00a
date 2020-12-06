@@ -11,7 +11,7 @@ module Mem(
 //Reg & Wire
 
 
-reg [7:0] BReg [0:512];
+reg [31:0] BReg [0:512];
 // Biendian & little endian (endianess)
 
 

@@ -1,8 +1,11 @@
 module Shift_left_2(
     input [31:0] a,
-    output [31:0] b
+    output reg [31:0] b
 );
 
-assign b = a << 2;
+always@*
+begin
+    b = a << 2;
+end
 
 endmodule

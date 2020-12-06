@@ -1,9 +1,12 @@
 module ADDERALU(
     input [31:0] a,
     input [31:0] b,
-    output [31:0] c
+    output reg [31:0] c
 );
 
-assign c = a + b;
+always@*
+begin
+    c = a + b;
+end
 
 endmodule
