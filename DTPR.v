@@ -87,7 +87,7 @@ BRANCH inst15( .a(cable4), .b(cable13), .c(cable26));
 
 SING_EX inst16( .a(instruccion[15:0]), .b(cable17) );
 
-INSTRUC_MEM inst17( .Datain(cable29), .instruccion(instruccion) );
+INSTRUC_MEM inst17( .Datain(cable29), .instruccion(instruccion[31:0]) );
 
 PC inst18( .a(cable28), .clk(clk), .b(cable29) );
 endmodule
